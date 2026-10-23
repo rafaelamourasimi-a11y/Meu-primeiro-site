@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b1417">
+  <meta name="description" content="Discos de vinil e revistas inspirados no universo de Harry Styles. Encontre seu próximo favorito na Harry's Garden.">
+  <title>Harry's Garden — Vista sua era favorita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span>✳</span> FRETE GRÁTIS nas compras acima de R$ 249 <span class="announcement-divider">·</span> feito por fãs, com amor
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Harry's Garden - início">
+      <span class="brand-mark" aria-hidden="true">H<span>✳</span></span>
+      <span class="brand-name">HARRY'S GARDEN<span>THE FAN STORE</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#colecoes">Coleções</a>
+      <a href="#produtos">Loja</a>
+      <a href="#mais-amados">Mais amados</a>
+      <a href="#sobre">Nossa história</a>
+    </nav>
+
+    <div class="header-actions">
+      <label class="search-box" for="search-input">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+        <input id="search-input" type="search" placeholder="Buscar no universo..." autocomplete="off">
+      </label>
+      <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo escuro" title="Alternar tema">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+      </button>
+      <button class="icon-button cart-trigger" id="cart-trigger" type="button" aria-label="Abrir carrinho">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+        <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+      </button>
+      <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-line"></span> PARA FÃS, COM TODO O CORAÇÃO</span>
+        <h1 id="hero-title">Vista sua<br> <em>era favorita.</em></h1>
+        <p>Um jardim para quem encontra música, liberdade e um pouquinho de magia em cada detalhe.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#produtos">Explorar produtos <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#colecoes">Conheça as coleções <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-star">✳</span>
+          <span>feito para celebrar<br><strong>o que faz você ser você</strong></span>
+        </div>
+        <span class="hero-doodle doodle-one" aria-hidden="true">✳</span>
+        <span class="hero-doodle doodle-two" aria-hidden="true">✦</span>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img src="Galeria/harry-garden-cover.webp" alt="Harry Styles usando terno preto com listras vermelhas" fetchpriority="high">
+          <span class="image-stamp">HARRY'S<br>GARDEN<br><small>THE FAN STORE</small></span>
+        </div>
+        <div class="hero-caption"><span>01 / 03</span><span>um estilo todo seu</span><span>✳</span></div>
+        <span class="hero-orbit" aria-hidden="true"></span>
+      </div>
+      <div class="hero-bottom"><span>ESTILO SEM REGRAS</span><span>✳</span><span>AMOR EM CADA DETALHE</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Manifesto da loja">
+      <div class="ticker-track" aria-hidden="true">
+        <span>GOOD VIBRATIONS</span><b>✳</b><span>LOVE ON TOUR</span><b>✳</b><span>BE KIND</span><b>✳</b><span>GOLDEN HOUR</span><b>✳</b>
+        <span>GOOD VIBRATIONS</span><b>✳</b><span>LOVE ON TOUR</span><b>✳</b><span>BE KIND</span><b>✳</b><span>GOLDEN HOUR</span><b>✳</b>
+      </div>
+    </section>
+
+    <section class="collections section-shell" id="colecoes">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">ESCOLHA SUA VIBE</span>
+          <h2>Um mundo de <em>possibilidades.</em></h2>
+        </div>
+        <p>Pequenos detalhes, grandes sentimentos. Qual era combina com você?</p>
+      </div>
+      <div class="collection-grid">
+        <a class="collection-card collection-fine" href="#produtos" data-collection="Fine Line">
+          <img src="Galeria/61nwmBwkQcL._UF1000,1000_QL80_.jpg" alt="" loading="lazy">
+          <span class="collection-number">01 / ROSA &amp; AZUL</span>
+          <span class="collection-title">Fine Line <span>↗</span></span>
+        </a>
+        <a class="collection-card collection-house" href="#produtos" data-collection="Harry's House">
+          <img src="Galeria/A1EYwZLPKYL._AC_UF1000,1000_QL80_.jpg" alt="" loading="lazy">
+          <span class="collection-number">02 / FEEL-GOOD</span>
+          <span class="collection-title">Harry's House <span>↗</span></span>
+        </a>
+        <a class="collection-card collection-golden" href="#produtos" data-collection="Revistas">
+          <img src="Galeria/2-1474915112.jpg" alt="" loading="lazy">
+          <span class="collection-number">03 / CAPAS ICÔNICAS</span>
+          <span class="collection-title">Revistas <span>↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="section-shell">
+        <div class="section-heading product-heading">
+          <div>
+            <span class="eyebrow">SEU PRÓXIMO FAVORITO ESTÁ AQUI</span>
+            <h2>Feito para <em>sentir.</em></h2>
+          </div>
+          <a class="text-link desktop-link" href="#produtos">ver tudo <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="product-toolbar">
+          <div class="filter-list" id="filter-list" role="group" aria-label="Filtrar produtos por categoria">
+            <button class="filter-chip is-active" type="button" data-category="todos" aria-pressed="true">Tudo</button>
+            <button class="filter-chip" type="button" data-category="vinis" aria-pressed="false">Discos de vinil</button>
+            <button class="filter-chip" type="button" data-category="revistas" aria-pressed="false">Revistas</button>
+          </div>
+          <label class="sort-control" for="sort-select">
+            <span>Ordenar:</span>
+            <select id="sort-select" aria-label="Ordenar produtos">
+              <option value="featured">Em destaque</option>
+              <option value="price-asc">Menor preço</option>
+              <option value="price-desc">Maior preço</option>
+              <option value="name">Nome A–Z</option>
+            </select>
+          </label>
+        </div>
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>Nenhum achadinho por aqui. Tente outra busca ou categoria. <button type="button" id="clear-filters">Limpar filtros</button></p>
+      </div>
+    </section>
+
+    <section class="bestseller-section" id="mais-amados">
+      <div class="bestseller-image">
+        <img src="Galeria/71sZfX2A-lL.jpg" alt="Harry Styles na capa da revista Vogue" loading="lazy">
+        <span class="bestseller-seal">FÃS<br>AMAM<br>✳</span>
+      </div>
+      <div class="bestseller-copy">
+        <span class="eyebrow">O QUERIDINHO DA LOJA</span>
+        <h2>Para guardar<br>perto do <em>coração.</em></h2>
+        <p>Uma peça especial para os dias em que tudo o que você precisa é lembrar de ser gentil consigo mesma.</p>
+        <div class="bestseller-price"><span>Revista Vogue — edição especial</span><strong>R$ 59,90</strong></div>
+        <button class="button button-dark" type="button" data-add-product="revista-vogue">Quero a minha <span aria-hidden="true">↗</span></button>
+        <span class="bestseller-footnote">REVISTA IMPRESSA · EDIÇÃO DE COLECIONADOR</span>
+      </div>
+      <div class="bestseller-decoration" aria-hidden="true">LOVE<br>EVERY<br>DAY</div>
+    </section>
+
+    <section class="promo-strip" id="sobre">
+      <div class="promo-star" aria-hidden="true">✳</div>
+      <div>
+        <span class="eyebrow">UM PRESENTE PRA VOCÊ</span>
+        <h2>Ouça, folheie e <em>colecione.</em></h2>
+        <p>Discos de vinil e revistas para guardar um pedacinho de cada era.</p>
+      </div>
+      <a href="#produtos" class="button button-outline">Encontrar meu favorito <span aria-hidden="true">↗</span></a>
+      <span class="promo-spark" aria-hidden="true">✦</span>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-spark" aria-hidden="true">✳</div>
+      <div class="newsletter-copy">
+        <span class="eyebrow">CARTINHAS DO JARDIM</span>
+        <h2>Uma dose de <em>good news.</em></h2>
+        <p>Novidades, lançamentos e surpresinhas direto na sua caixa de entrada.</p>
+      </div>
+      <form class="newsletter-form" id="newsletter-form">
+        <label class="sr-only" for="newsletter-email">Seu melhor e-mail</label>
+        <input id="newsletter-email" name="email" type="email" placeholder="Seu melhor e-mail" required>
+        <button type="submit" aria-label="Inscrever-se na newsletter">Quero receber <span aria-hidden="true">→</span></button>
+        <p id="newsletter-message" class="newsletter-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio" aria-label="Harry's Garden - início">
+          <span class="brand-mark" aria-hidden="true">H<span>✳</span></span>
+          <span class="brand-name">HARRY'S GARDEN<span>THE FAN STORE</span></span>
+        </a>
+        <p>Um espaço feito com carinho para celebrar música, estilo e tudo aquilo que faz a gente sentir.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">ig</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer" aria-label="TikTok">tk</a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="#colecoes">Coleções</a>
+        <a href="#produtos">Todos os produtos</a>
+        <a href="#mais-amados">Mais vendidos</a>
+        <a href="#sobre">Nossa história</a>
+      </div>
+      <div class="footer-column">
+        <h3>Ajuda</h3>
+        <a href="mailto:oi@harrysgarden.com.br">Fale com a gente</a>
+        <a href="mailto:oi@harrysgarden.com.br?subject=Trocas%20e%20devolu%C3%A7%C3%B5es">Trocas &amp; devoluções</a>
+        <a href="mailto:oi@harrysgarden.com.br?subject=Prazo%20de%20entrega">Envio &amp; entrega</a>
+        <a href="mailto:oi@harrysgarden.com.br?subject=Perguntas%20frequentes">Perguntas frequentes</a>
+      </div>
+      <div class="footer-column">
+        <h3>Fale com a gente</h3>
+        <a href="mailto:oi@harrysgarden.com.br">oi@harrysgarden.com.br</a>
+        <span>Seg–Sex, das 9h às 18h</span>
+        <span>Feito com ♡ no Brasil</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Harry's Garden. Feito com amor e uma pitada de glitter.</span>
+      <div><a href="mailto:oi@harrysgarden.com.br?subject=Pol%C3%ADtica%20de%20privacidade">Privacidade</a><a href="mailto:oi@harrysgarden.com.br?subject=Termos%20de%20uso">Termos de uso</a></div>
+      <span>✨ pagamentos seguros em breve</span>
+    </div>
+    <p class="fan-disclaimer">Loja independente feita por fãs, sem vínculo oficial com Harry Styles ou seus representantes.</p>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="drawer-header">
+      <div><span class="eyebrow">SUA SACOLINHA</span><h2 id="cart-title">Carrinho <span id="drawer-item-count">(0)</span></h2></div>
+      <button class="icon-button drawer-close" id="drawer-close" type="button" aria-label="Fechar carrinho">×</button>
+    </div>
+    <div class="cart-shipping">
+      <p id="shipping-message">Faltam <strong>R$ 249,00</strong> para ganhar frete grátis!</p>
+      <div class="shipping-track"><span id="shipping-progress"></span></div>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty">
+      <span aria-hidden="true">✳</span>
+      <h3>Sua sacolinha está esperando</h3>
+      <p>Encontre algo que tenha a sua cara.</p>
+      <button class="button button-primary" id="continue-shopping" type="button">Explorar produtos</button>
+    </div>
+    <div class="drawer-footer" id="drawer-footer">
+      <div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">R$ 0,00</strong></div>
+      <p>Frete e descontos calculados na próxima etapa.</p>
+      <button class="button button-primary checkout-button" id="checkout-button" type="button">Continuar para pagamento <span aria-hidden="true">→</span></button>
+      <p class="payment-note">Esta é uma loja demonstrativa. Pagamentos reais exigem integração com um serviço seguro.</p>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
